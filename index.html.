@@ -49,3 +49,201 @@
       text-decoration: none;
       margin
 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Vendas Digitais</title>
+  <meta name="description" content="Conheça a Mega Vendas Digitais e nossas ofertas.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f5f9;
+      color: #222;
+    }
+
+    header {
+      background: #101828;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+    }
+
+    header h1 {
+      color: #38e078;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #1d2939;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      display: inline-block;
+      padding: 5px 0;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, #101828, #087f5b);
+      color: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    .banner h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .banner p {
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .botao {
+      display: inline-block;
+      background: #20c967;
+      color: #102018;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .produto {
+      background: white;
+      border-radius: 12px;
+      padding: 25px 18px;
+      text-align: center;
+      box-shadow: 0 3px 12px #00000010;
+    }
+
+    .icone {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .produto h3 {
+      margin-bottom: 12px;
+    }
+
+    .produto p {
+      color: #667085;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+
+    .sobre {
+      text-align: center;
+      padding: 35px 10px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #101828;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MEGA VENDAS DIGITAIS</h1>
+    <p>Sua próxima compra começa aqui!</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre nós</a>
+  </nav>
+
+  <section class="banner" id="inicio">
+    <h2>Bem-vindo à Mega Vendas!</h2>
+    <p>Descubra nossos produtos e aproveite nossas novidades.</p>
+    <a class="botao" href="#produtos">Ver produtos</a>
+  </section>
+
+  <main>
+    <section id="produtos">
+      <h2 class="titulo">Nossos produtos</h2>
+
+      <div class="produtos">
+
+        <article class="produto">
+          <div class="icone">📱</div>
+          <h3>Produto Digital 1</h3>
+          <p>Adicione aqui a descrição do seu produto.</p>
+          <a class="botao" href="#contato">Tenho interesse</a>
+        </article>
+
+        <article class="produto">
+          <div class="icone">💻</div>
+          <h3>Produto Digital 2</h3>
+          <p>Conheça nossas novidades digitais.</p>
+          <a class="botao" href="#contato">Tenho interesse</a>
+        </article>
+
+        <article class="produto">
+          <div class="icone">🎁</div>
+          <h3>Produto Digital 3</h3>
+          <p>Em breve, mais ofertas para você.</p>
+          <a class="botao" href="#contato">Tenho interesse</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre a Mega Vendas Digitais</h2>
+      <p>Uma loja criada para apresentar produtos e novidades digitais.</p>
+    </section>
+
+    <section class="sobre" id="contato">
+      <h2>Entre em contato</h2>
+      <p>Em breve, você poderá adicionar seu WhatsApp e seus links de compra.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mega Vendas Digitais</p>
+    <p>Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
