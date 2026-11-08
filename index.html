@@ -4,13 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mega Vendas Digitais</title>
+/* CABEÇALHO PROFISSIONAL */
+.site-header {
+    background: linear-gradient(135deg, #102a43, #087e96);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+.site-header h1 {
+    font-size: 26px;
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+.site-header p {
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.site-nav a:hover {
+    background: #00a6b7;
+}
+
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 21px;
     }
+
+    .site-nav {
+        gap: 8px;
+    }
+
+    .site-nav a {
+        font-size: 13px;
+    }
+}
+  <style>
 
     body {
       font-family: Arial, sans-serif;
