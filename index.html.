@@ -1,2 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-index.html.
+<title>Mega Vendas Digitais</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+}
+
+header {
+  background: #101d35;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  color: #00d4ff;
+}
+
+.banner {
+  background: #152b4d;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.banner h2 {
+  font-size: 27px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.produto {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px #ccc;
+}
+
+.produto img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.produto h3 {
+  font-size: 16px;
+}
+
+.preco {
+  color: #008b50;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  background: #00a86b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: #101d35;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 350px) {
+  .produtos {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>MEGA VENDAS DIGITAIS</h1>
+<p>Sua loja de produtos digitais e acessórios</p>
+</header>
+
+<section class="banner">
+<h2>Bem-vindo à nossa loja!</h2>
+<p>Qualidade, praticidade e ofertas especiais.</p>
+</section>
+
+<div class="container">
+
+<h2>Nossos produtos</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://placehold.co/200x150?text=Fone">
+<h3>Fone Bluetooth</h3>
+<p class="preco">R$ 49,90</p>
+<button onclick="comprar('Fone Bluetooth')">Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://placehold.co/200x150?text=Carregador">
+<h3>Carregador USB</h3>
+<p class="preco">R$ 29,90</p>
+<button onclick="comprar('Carregador USB')">Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://placehold.co/200x150?text=Smartwatch">
+<h3>Smartwatch</h3>
+<p class="preco">R$ 89,90</p>
+<button onclick="comprar('Smartwatch')">Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://placehold.co/200x150?text=Caixa+de+som">
+<h3>Caixa de Som</h3>
+<p class="preco">R$ 59,90</p>
+<button onclick="comprar('Caixa de Som')">Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://placehold.co/200x150?text=Suporte">
+<h3>Suporte para Celular</h3>
+<p class="preco">R$ 19,90</p>
+<button onclick="comprar('Suporte para Celular')">Comprar</button>
+</div>
+
+</div>
+</div>
+
+<footer>
+<p>MEGA VENDAS DIGITAIS</p>
+<p>Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function comprar(produto) {
+  const numero = "55SEUNUMERO";
+  const mensagem = encodeURIComponent(
+    "Olá! Tenho interesse em comprar: " + produto
+  );
+
+  window.open(
+    "https://wa.me/" + numero + "?text=" + mensagem,
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
