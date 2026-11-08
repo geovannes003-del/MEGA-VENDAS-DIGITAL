@@ -42,4 +42,194 @@
 
     nav a {
       color: white;
-      text
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: #d9f0f2;
+      text-align: center;
+      padding: 45px 15px;
+    }
+
+    .banner h2 {
+      color: #102a43;
+      font-size: 27px;
+      margin-bottom: 12px;
+    }
+
+    .banner p {
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #102a43;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .produto {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+
+    .produto .imagem {
+      background: #e8f1f5;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .produto h3 {
+      margin-bottom: 10px;
+    }
+
+    .preco {
+      color: #087e8b;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .botao {
+      display: inline-block;
+      background: #087e8b;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .botao:hover {
+      background: #065f68;
+    }
+
+    .contato {
+      background: #d9f0f2;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    footer {
+      background: #102a43;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mega Vendas Digitais</h1>
+    <p>Qualidade, praticidade e ofertas para você!</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="banner" id="inicio">
+    <h2>Bem-vindo à Mega Vendas Digitais!</h2>
+    <p>Encontre acessórios eletrônicos com preços especiais.</p>
+  </section>
+
+  <main class="container" id="produtos">
+    <h2>Nossos Produtos</h2>
+
+    <div class="produtos">
+
+      <div class="produto">
+        <div class="imagem">🎧</div>
+        <h3>Fone Bluetooth</h3>
+        <p>Praticidade para ouvir suas músicas.</p>
+        <div class="preco">R$ 49,90</div>
+        <a class="botao" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Fone%20Bluetooth">
+          Comprar
+        </a>
+      </div>
+
+      <div class="produto">
+        <div class="imagem">🔌</div>
+        <h3>Carregador USB</h3>
+        <p>Uma opção prática para carregar seu celular.</p>
+        <div class="preco">R$ 29,90</div>
+        <a class="botao" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Carregador%20USB">
+          Comprar
+        </a>
+      </div>
+
+      <div class="produto">
+        <div class="imagem">⌚</div>
+        <h3>Smartwatch</h3>
+        <p>Tecnologia e praticidade no seu dia.</p>
+        <div class="preco">R$ 89,90</div>
+        <a class="botao" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Smartwatch">
+          Comprar
+        </a>
+      </div>
+
+      <div class="produto">
+        <div class="imagem">🔊</div>
+        <h3>Caixa de Som</h3>
+        <p>Som para acompanhar seus momentos.</p>
+        <div class="preco">R$ 59,90</div>
+        <a class="botao" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20na%20Caixa%20de%20Som">
+          Comprar
+        </a>
+      </div>
+
+      <div class="produto">
+        <div class="imagem">📱</div>
+        <h3>Suporte para Celular</h3>
+        <p>Mais comodidade para usar seu aparelho.</p>
+        <div class="preco">R$ 19,90</div>
+        <a class="botao" href="https://wa.me/55SEUNUMERO?text=Tenho%20interesse%20no%20Suporte%20para%20Celular">
+          Comprar
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="contato" id="contato">
+    <h2>Fale com a Mega Vendas Digitais</h2>
+    <p>Entre em contato para tirar dúvidas sobre os produtos.</p>
+    <a class="botao" href="https://wa.me/55SEUNUMERO">
+      Falar pelo WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Mega Vendas Digitais</p>
+    <p>Obrigado por visitar nossa loja!</p>
+  </footer>
+
+</body>
+</html>
